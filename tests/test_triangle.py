@@ -1,4 +1,4 @@
-from src.geometry import Triangle
+from geometry import Triangle
 import math
 
 def test_triange_area():

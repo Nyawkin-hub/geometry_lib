@@ -1,4 +1,4 @@
-from src.geometry import Circle
+from geometry import Circle
 import math
 
 def test_circle_area():
