@@ -1,0 +1,30 @@
+[project]
+name = "geometry-lib"
+version = "1.0.0"
+description = "The library for delivery to external clients that can calculate the area of a circle by its radius and of a triangle by its three sides."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+keywords = ["geometry", "area", "triangle", "circle"]
+authors = [
+  {email = "soranosf@gmail.com"},
+  {name = "Artur Muftakhov"}
+]
+classifiers = [
+  "Programming Language :: Python"
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "build", "mypy", "black"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = ["tests"]
+
